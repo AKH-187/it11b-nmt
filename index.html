@@ -1,29 +1,80 @@
 <!DOCTYPE html>
 <html lang="de">
 	<style>
-		p {color:white;}
-		h1 {color: white;}
-		a {color: white;}
+		.background {
+			background-color: #222222;
+		}
+		.dm-navbar {
+			float: left;
+			width: 100%;
+			z-index: 1;
+  			top: 0;
+  			left: 0;
+		}
+		.dm-navbar a{
+			color: #999;
+			text-decoration: none;
+			font-family: Verdana;
+			line-height: 150%;
+		}
+		.dm-navbar a:hover {
+			color: #f1f1f1;
+		}
+		.dm-footer {
+			text-align: center;
+			color: #999;
+			text-decoration: none;
+			font-family: Verdana;
+			line-height: 150%;
+		}
+		.dm-footer a:hover {
+			color: #f1f1f1;
+		}
+		.dm-title {
+			color: white;
+			font-family: Verdana;
+			line-height: 60%;
+		}
+		.dm-text {
+			color: white;
+			font-family: Verdana;
+		}
 	</style>
 	<head>
 		<title>it11b-nmt-test01</title>
 	</head>
-	<body bgcolor='232323'>
+	<body class="background">
 		<header>
-			<h1>Network Spy</h1>
-			<p>Network Monitoring Tool</p>
-			<img src="img/logo.png" style="width:120px">
+			<div>
+			<div style="float:left">
+				<img src="img/logo.png" style="width:65px">
+			</div>
+			<div>
+				<h1 class="dm-title">Network Spy</h1>
+				<p class="dm-title">Network Monitoring Tool</p>
+			</div>
+		<hr>
 		</header>
-		<nav>
-			<a href="#">Monitor</a>
-			<a href="#">Geräteverwaltung</a>
-			<a href="#">Benutzerkonto</a>
-			<a href="#">Login</a>
-		</nav>
+		<div class="dm-navbar">
+			<nav>
+				<a href="#">GER&Auml;TEVERWALTUNG</a>
+				<a> - </a>
+				<a href="#">BENUTZERKONTO</a>
+				<a> - </a>
+				<a href="#">LOGIN</a>
+			</nav>
+		</div>
+	</br>
+		<main>
+			<h2 class="dm-text">Vorlage</h2>
+		</main>
 		<footer>
-			
-			<a href="#">Monitor</a>
-			<a href="#">Monitor</a>
+			<div class="dm-footer">
+				<p>2022 BS1 BT GmbH</p>
+				<a href="#" class="dm-footer">IMPRESSUM</a>
+				<a> - </a>
+				<a href="#" class="dm-footer">SITEMAP</a>
+			</div>
 		</footer>
 	</body>
 </html> <!--End-/Closing-Tag-->
