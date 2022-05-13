@@ -1,47 +1,19 @@
 <!DOCTYPE html>
 <html lang="de">
-	<style>
-		.background {
-			background-color: #222222;
-		}
-		.dm-navbar {
-			float: left;
-			width: 100%;
-			z-index: 1;
-  			top: 0;
-  			left: 0;
-		}
-		.dm-navbar a{
-			color: #999;
-			text-decoration: none;
-			font-family: Verdana;
-			line-height: 150%;
-		}
-		.dm-navbar a:hover {
-			color: #f1f1f1;
-		}
-		.dm-footer {
-			text-align: center;
-			color: #999;
-			text-decoration: none;
-			font-family: Verdana;
-			line-height: 150%;
-		}
-		.dm-footer a:hover {
-			color: #f1f1f1;
-		}
-		.dm-title {
-			color: white;
-			font-family: Verdana;
-			line-height: 60%;
-		}
-		.dm-text {
-			color: white;
-			font-family: Verdana;
-		}
-	</style>
 	<head>
-		<title>it11b-nmt-test01</title>
+		<title>Login - Network Spy</title>
+		<link rel="icon" href="img/logo.png" type ="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="styles/darkmode.css">
+		<script>
+			function toggleTheme() {
+				var theme = document.getElementsByTagName('link')[1];
+				if (theme.getAttribute('href') == 'styles/lightmode.css') {
+					theme.setAttribute('href', 'styles/darkmode.css');
+				} else {
+					theme.setAttribute('href', 'styles/lightmode.css');
+				}
+			}
+		</script>
 	</head>
 	<body class="background">
 		<header>
@@ -55,25 +27,47 @@
 			</div>
 		<hr>
 		</header>
-		<div class="dm-navbar">
+		<div class="dm-navbar" style="left: 0;padding-left: 8px">
 			<nav>
 				<a href="#">GER&Auml;TEVERWALTUNG</a>
 				<a> - </a>
 				<a href="#">BENUTZERKONTO</a>
-				<a> - </a>
-				<a href="#">LOGIN</a>
 			</nav>
 		</div>
-	</br>
+		<div class="dm-navbar" style="right: 0;padding-right: 8px">
+			<nav>
+				<a href="#">LOGIN</a>
+				<a> - </a>
+				<a onclick="toggleTheme()">CHANGE THEME</a>
+			</nav>
+		</div>
+		<br>
 		<main>
-			<h2 class="dm-text">Vorlage</h2>
+			<div class="dm-login">
+				<div class="dm-login-input">
+					<form>
+						<h3 class="dm-title" style="margin-left:76px;line-height: 100%;">Anmelden</h3>
+						<a class="dm-login-text">Benutzername:</a>
+						<input type="text" name="username" placeholder="Username" style="width: 130px;margin-left: 0px"
+						class="dm-login-input-box"/>
+						<br><br>
+						<a class="dm-login-text">Kennwort:</a>
+						<input type="password" name="password" placeholder="Kennwort" style="width: 130px;margin-left: 34px;"
+						class="dm-login-input-box"/>
+						<br><br>
+						<input type="submit" value="login" class="dm-login-input-submit"/>
+					</form>
+				</div>
+			</div>
 		</main>
 		<footer>
-			<div class="dm-footer">
-				<p>2022 BS1 BT GmbH</p>
-				<a href="#" class="dm-footer">IMPRESSUM</a>
-				<a> - </a>
-				<a href="#" class="dm-footer">SITEMAP</a>
+			<div style="position: absolute;bottom: 10px;text-align: center;width: 99%;">
+				<div style="position: relative;" class="dm-footer">
+					<p  class="dm-footer">BS1-BT GmbH 2022</p>
+					<a href="#" class="dm-footer">IMPRESSUM</a>
+					<a class="dm-footer"> - </a>
+					<a href="#" class="dm-footer">SITEMAP</a>
+				</div>
 			</div>
 		</footer>
 	</body>

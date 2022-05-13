@@ -1,0 +1,70 @@
+body {
+    zoom: 90%;
+}
+.background {
+    background-color: #ffffff;
+}
+.dm-navbar {
+    position: fixed;
+    z-index: 1;
+}
+.dm-navbar a{
+    color: #5d5d66;
+    text-decoration: none;
+    font-family: Verdana;
+}
+.dm-navbar a:hover {
+    color: #bf86c9;
+}
+.dm-footer {
+    text-align: center;
+    color: #5d5d66;
+    text-decoration: none;
+    font-family: Verdana;
+    line-height: 80%;
+
+}
+.dm-footer a:hover {
+    color: #bf86c9;
+}
+.dm-title {
+    color: #000000;
+    font-family: Verdana;
+    line-height: 60%;
+}
+.dm-text {
+    color: #000000;
+    font-family: Verdana;
+}
+.dm-login {
+    background-color: #e5e5e5;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -108px;
+    margin-left: -158px;
+    width: 300px;
+    height: 200px;
+    border-width:8px;
+    border-style:solid;
+    border-color: #bd97c4;
+}
+.dm-login-input {
+    position: relative;
+    margin-top: 30px;
+    margin-left: 25px;
+}
+.dm-login-input-box {
+    background-color: #ffffff;
+    color: #000000;
+}
+.dm-login-text {
+    color: #000000;
+    font-family: Verdana;
+    font-size: 85%;
+}
+.dm-login-input-submit {
+    background-color: #ffffff;
+    color: #000000;
+    margin-left: 105px;
+}
